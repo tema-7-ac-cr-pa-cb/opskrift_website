@@ -4,11 +4,24 @@
   box-sizing: border-box;
 }
 
+main {
+  background-color: var(--background-color);
+}
+
 /* Skrifttyper */
 
 .quicksand {
   font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.jost {
+  font-family: "Jost", serif;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
   font-style: normal;
 }
 
@@ -16,6 +29,7 @@
   /* Farver */
   --dark-blue-color: #2e5ba0;
   --light-blue-color: #7eb2dd;
+  --light-blue-color2: rgb(73, 119, 156);
   --background-color: #fff8e3;
   --text-color-black: black;
   --text-color-white: white;
@@ -24,11 +38,11 @@
   --font-headline: Arial, Helvetica, sans-serif;
 
   /* Typografi */
-  --h1-size: 3rem;
-  --h2-size: 2.5rem;
+  --h1-size: 5rem;
+  --h2-size: 3rem;
   --h3-size: 2rem;
   --h4-size: 1.5rem;
-  --h5-size: 1.25rem;
+  --h5-size: 1.1rem;
   --p-size: 1rem;
 }
 
@@ -39,26 +53,40 @@
   color: var(--text-color);
 } */
 
+body {
+  background-color: #fff;
+  padding: 20px;
+}
+
 h1 {
+  font-family: "Playfair Display", serif;
   font-size: var(--h1-size);
 }
 
 h2 {
+  font-family: "Playfair Display", serif;
   font-size: var(--h2-size);
+  font-weight: 700;
 }
 
-h3 {
-  font-size: var(--h3-size);
-}
-
-h4 {
-  font-size: var(--h4-size);
-}
-
-h5 {
-  font-size: var(--h5-size);
+.button {
+  border-radius: 25px;
+  font-family: "Quicksand", serif;
+  font-weight: 550;
+  letter-spacing: 1px;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 p {
+  font-family: "Quicksand", serif;
   font-size: var(--p-size);
+}
+
+.nav-menu a {
+  font-family: "Quicksand", serif;
+  font-size: var(--h5-size);
+  /* text-decoration: none; */
+  color: black;
+  font-weight: 550;
+  margin: 8px;
 }

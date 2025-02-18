@@ -1,14 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Indisk Dahl Opskrift</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
 </head>
+
+
+
 
 <body>
 
+    <header class="header">
+
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Recipes</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <img src="voyage_logo_lys.svg" alt="logo">
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Article name or keywords...">
+            <!-- <select>
+                <option>All categories</option>
+            </select> -->
+            <button>Search</button>
+        </div>
+
+        <button class="burger-menu" aria-label="Open menu">
+            ☰
+        </button>
+
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <!-- search button med dropdown search -->
+    <!-- <div id="search-dropdown" class="search-dropdown">
+        <input type="text" placeholder="Search...">
+        <button id="close-btn">✖</button>
+    </div> -->
+
+
+
+    <main>
+        <div class="forside_hero-container">
+            <div class="forside_hero-image">
+                <img src="forside_svetlana_kuznetsova.webp" alt="Indisk dahl med naanbrød">
+            </div>
+            <div class="forside_hero-content">
+                <p class="forside_hero-tagline">Go on a Voyage!</p>
+                <h2>A Culinary Journey Around the World</h2>
+
+                <p class="forside_hero-beskrivelse">
+                    Pack your taste buds and explore the world through its most delicious dishes.
+                </p>
+                <a href="#" class="button">Get the recipe →</a>
+            </div>
+        </div>
+        <!-- <div class="recipe-container"> -->
+        <!-- <div class="recipe-image"> -->
+        <!-- <div class="recipe-content"> -->
+        <!-- <p class="description"> -->
+        <!-- <a href="#" class="recipe-button">Få opskriften →</a> -->
+    </main>
+
+
+    <script src="js/index.js"></script>
 </body>
+
 
 </html>
