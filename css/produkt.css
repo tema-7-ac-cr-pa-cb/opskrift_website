@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  /* background-color: var(--light-blue-color); */
+  background-color: #edf7ff;
+}
+
+@media (min-width: 800px) {
+  .grid4_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+.grid4_1 {
+  /* background-color: var(--background-color); */
+  background-color: #f1e1cd;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.liste_opskrift {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 5rem;
+  padding-left: 60px;
+  background-color: #fff8e3;
+  margin-left: -19px;
+  margin-right: -5px;
+  color: #2e5ba0;
+}
+
+.ingredisener_overskrift {
+  padding-top: 2rem;
+  padding-bottom: 10px;
+  color: #2e5ba0;
+}
+
+.billede_produkt_centreret {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff8e3;
+  margin-right: -19px;
+  margin-left: -5px;
+}
+
+.image {
+  width: 60%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.instruktioner_container {
+  display: grid;
+  justify-content: center;
+}
+
+.instruktioner_container .instruktioner_overskrift {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #2e5ba0;
+}
+
+.instruktioner_container .instruktion_tekst {
+  max-width: 48rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+  color: #2e5ba0;
+}
+
+.streg {
+  width: 100%;
+  height: 1px;
+  background-color: #2e5ba0;
+  margin-top: 1rem;
+}
+
+@media (max-width: 800px) {
+  .streg {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .illusion_i_bunden {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+  }
+}
+
+.illusion_i_bunden {
+  padding-bottom: 4rem;
+}
+
+.servings,
+.prep_time,
+.cook_time {
+  display: grid;
+  justify-content: center;
+  padding-bottom: 2rem;
+  color: #2e5ba0;
+}
+
+.servings_number,
+.prepTimeMinutes,
+.cookTimeMinutes {
+  text-align: center;
+  font-size: x-large;
+  padding-bottom: 8px;
+  color: #2e5ba0;
+}
