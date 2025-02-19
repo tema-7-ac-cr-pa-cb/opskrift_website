@@ -49,7 +49,7 @@ li {
 
 .ingredisener_overskrift {
   padding-top: 2rem;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   color: #2e5ba0;
 }
 
@@ -63,7 +63,7 @@ li {
 }
 
 .image {
-  width: 60%;
+  width: 80%;
   height: auto;
   padding-top: 50px;
   padding-bottom: 50px;

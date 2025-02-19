@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
+
     <link rel="stylesheet" href="css/produkt.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/produkt.js" defer></script>
@@ -14,7 +15,16 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="billeder/logo_ny.svg" alt="Home">
+            </a>
+        </div>
+
+        <a href="#" class="workshop_button">+ Workshops</a>
+
     </header>
     <main>
         <div class="elementContainer">
@@ -75,6 +85,45 @@
         </div>
     </main>
     <footer>
+        <div class="footer-container">
+            <div class="newsletter">
+                <p><em>Sign up for delicious Voyage stories</em></p>
+                <form>
+                    <input type="email" placeholder="EMAIL">
+                    <button class="footer-button" type="submit">→</button>
+                </form>
+                <p class="disclaimer">*We respect your inbox. No spam, just flavor.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="column">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Story</a>
+                    <a href="#">Work With Us</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="column">
+                    <h4>Explore</h4>
+                    <a href="#">Destinations</a>
+                    <a href="#">Recipes</a>
+                    <a href="#">Guides</a>
+                    <a href="#">Newsletter</a>
+                </div>
+                <div class="column">
+                    <h4>Social</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+
+            <p class="footer-bottom">© All rights reserved 2025</p>
+            <!-- <img class="footer_logo" src="billeder/logo_ny.svg" alt="logo"> -->
+        </div>
+        <div>
+            <img class="footer_logoname" src="billeder/voyage_big.svg" alt="Logo big">
+        </div>
     </footer>
 
 

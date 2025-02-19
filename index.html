@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indisk Dahl Opskrift</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,50 +19,79 @@
 
     <header class="header">
 
-        <nav class="nav">
-            <ul class="nav-menu">
-                <li><a href="#" class="active">About</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Recipes</a></li>
-            </ul>
-        </nav>
-
         <div class="logo">
-            <img src="voyage_logo_lys.svg" alt="logo">
+            <a href="index.html">
+                <img src="billeder/logo_ny.svg" alt="Home">
+            </a>
         </div>
 
-        <button class="burger-menu" aria-label="Open menu">
-            ☰
-        </button>
+        <a href="#" class="workshop_button">+ Workshops</a>
 
-        <div class="mobile-menu">
-            <ul>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </div>
     </header>
 
     <main>
         <div class="forside_hero-container">
             <div class="forside_hero-image">
-                <img src="forside_svetlana_kuznetsova.webp" alt="Indisk dahl med naanbrød">
+                <img src="billeder/forside_svetlana_kuznetsova.webp" alt="Indisk dahl med naanbrød">
             </div>
             <div class="forside_hero-content">
-                <p class="forside_hero-tagline">Go on a Voyage!</p>
-                <h2>A Culinary Journey Around the World</h2>
-
+                <p class="forside_hero-tagline">Go on a worldly food Voyage!</p>
+                <h1>A Culinary Journey Around the World</h1>
                 <p class="forside_hero-beskrivelse">
                     Pack your taste buds and explore the world through its most delicious dishes.
                 </p>
-                <a href="#" class="button">Get the recipe →</a>
+                <a href="produktliste.html" class="index_button">Find the recipes →</a>
             </div>
         </div>
 
     </main>
 
-    <script src="js/index.js"></script>
+    <footer>
+        <div class="footer-container">
+            <div class="newsletter">
+                <p><em>Sign up for delicious Voyage stories</em></p>
+                <form>
+                    <input type="email" placeholder="EMAIL">
+                    <button class="footer-button" type="submit">→</button>
+                </form>
+                <p class="disclaimer">*We respect your inbox. No spam, just flavor.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="column">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Story</a>
+                    <a href="#">Work With Us</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="column">
+                    <h4>Explore</h4>
+                    <a href="#">Destinations</a>
+                    <a href="#">Recipes</a>
+                    <a href="#">Guides</a>
+                    <a href="#">Newsletter</a>
+                </div>
+                <div class="column">
+                    <h4>Social</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Pinterest</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+
+            <p class="footer-bottom">© All rights reserved 2025</p>
+            <!-- <img class="footer_logo" src="billeder/logo_ny.svg" alt="logo"> -->
+        </div>
+        <div>
+            <img class="footer_logoname" src="billeder/voyage_big.svg" alt="Logo big">
+        </div>
+    </footer>
+
+
+
+
+    <!-- <script src="js/index.js"></script> -->
 </body>
 
 

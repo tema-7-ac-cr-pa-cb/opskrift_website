@@ -9,6 +9,13 @@ img {
   margin: 0% auto;
 }
 
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* 
 .produktliste h1 {
   font-family: var(--font-headline);
   text-align: center;
@@ -16,7 +23,8 @@ img {
   margin-bottom: 2rem;
   font-weight: 100;
   color: var(--dark-blue-color);
-}
+} */
+
 .grid_1-1-1 h4 {
   font-family: var(--font-headline);
   margin-left: 1rem;

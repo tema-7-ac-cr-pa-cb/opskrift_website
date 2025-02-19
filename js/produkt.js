@@ -17,7 +17,7 @@ function showElement(data) {
   elementContainer.innerHTML = `
             <div class="grid4_1">
                 <div class="liste_opskrift">
-                    <h3>${data.name}</h3>
+                    <h1>${data.name}</h1>
                     <p>${data.cuisine}, ${data.mealType}</p>
                     <p class="ingredisener_overskrift"> Ingredients:</p>
                     <ul class="ingredients">
@@ -29,7 +29,7 @@ function showElement(data) {
                 </div>
             </div>
             <div class="instruktioner_container">
-                <h4 class="instruktioner_overskrift">Instructions</h4>
+                <h2 class="instruktioner_overskrift">Instructions</h2>
                 <p class="instruktion_tekst">${data.instructions}</p>
             </div>
             <div class="illusion_i_bunden">

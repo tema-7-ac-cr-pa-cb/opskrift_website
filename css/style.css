@@ -4,11 +4,28 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--background-color);
+}
+
+/* main {
+  background-color: var(--background-color);
+} */
+
 /* Skrifttyper */
 
 .quicksand {
   font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.jost {
+  font-family: "Jost", serif;
+  font-style: normal;
+}
+
+.playfair-display {
+  font-family: "Playfair Display", serif;
   font-style: normal;
 }
 
@@ -16,6 +33,7 @@
   /* Farver */
   --dark-blue-color: #2e5ba0;
   --light-blue-color: #7eb2dd;
+  --light-blue-color2: rgb(73, 119, 156);
   --background-color: #fff8e3;
   --text-color-black: black;
   --text-color-white: white;
@@ -24,41 +42,209 @@
   --font-headline: Arial, Helvetica, sans-serif;
 
   /* Typografi */
-  --h1-size: 3rem;
-  --h2-size: 2.5rem;
+  --h1-size: 5rem;
+  --h2-size: 3rem;
   --h3-size: 2rem;
   --h4-size: 1.5rem;
-  --h5-size: 1.25rem;
+  --h5-size: 1.1rem;
   --p-size: 1rem;
 }
 
-/* KIG HER */
-/* body {
-  font-family: var(--font-primary);
-  background-color: var(--background-color);
-  color: var(--text-color);
-} */
-
 h1 {
+  font-family: "Playfair Display", serif;
   font-size: var(--h1-size);
+  font-weight: normal;
+  color: var(--text-color-black);
+  line-height: 110%;
 }
 
 h2 {
+  font-family: "Playfair Display", serif;
   font-size: var(--h2-size);
 }
 
 h3 {
+  font-family: "Playfair Display", serif;
   font-size: var(--h3-size);
 }
 
 h4 {
+  font-family: "Playfair Display", serif;
   font-size: var(--h4-size);
 }
 
-h5 {
-  font-size: var(--h5-size);
+p {
+  font-family: "Quicksand", serif;
+  font-size: var(--p-size);
 }
 
-p {
-  font-size: var(--p-size);
+.footer_logo {
+  width: 80px;
+  margin: 10px;
+}
+
+/* -------- Header -----  */
+
+.logo img {
+  width: 60px;
+  height: auto;
+}
+
+.header {
+  /* position: sticky; */
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  display: flex;
+  height: 5.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: var(--light-blue-color);
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: 7rem;
+    display: flex;
+    padding: 20px;
+  }
+
+  /* logo i midten  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  } */
+
+  .logo img {
+    width: 90px;
+    height: auto;
+  }
+}
+
+#cuisine {
+  /* display: inline-block; */
+  background-color: var(--dark-blue-color);
+  color: var(--text-color-white);
+  padding: 15px 20px;
+  border-radius: 25px;
+  font-family: "Quicksand", serif;
+  letter-spacing: 1px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.workshop_button {
+  display: inline-block;
+  background-color: var(--dark-blue-color);
+  color: var(--text-color-white);
+  padding: 15px 30px;
+  text-underline-offset: 4px;
+  /* text-decoration: none; */
+  border-radius: 25px;
+  font-family: "Quicksand", serif;
+  /* font-weight: 550; */
+  letter-spacing: 1px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.newsletter_button:hover {
+  transform: translateX(8px);
+}
+
+.button:hover {
+  transform: translateX(8px);
+}
+
+/* ---- Footer ----- */
+
+footer {
+  background: var(--light-blue-color);
+  color: black;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.newsletter em {
+  font-family: "Quicksand", serif;
+  font-size: 18px;
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid var(--dark-blue-color);
+  background: transparent;
+  padding: 10px;
+  font-size: 16px;
+  color: var(--dark-blue-color);
+  outline: none;
+}
+
+.footer-button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--dark-blue-color);
+}
+
+.disclaimer {
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+.footer-links {
+  font-family: "Playfair Display", serif;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.column {
+  text-align: left;
+}
+
+.column h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.column a {
+  font-family: "Quicksand", serif;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+.column a:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  margin-top: 80px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.footer_logoname {
+  width: 100%;
 }
