@@ -114,6 +114,17 @@ li {
   background: var(--light-blue-color);
 }
 
+.home {
+  color: white;
+  text-decoration: none;
+  justify-content: right;
+  padding: 2.5rem;
+}
+
+.home:hover {
+  color: #2e5ba0;
+}
+
 @media (min-width: 768px) {
   .header {
     height: 7rem;
@@ -153,7 +164,7 @@ li {
   text-decoration: none;
   border-radius: 25px;
   font-family: "Quicksand", serif;
-  /* font-weight: 550; */
+  font-weight: 550;
   letter-spacing: 1px;
   transition: background 0.3s ease, transform 0.2s ease;
 }

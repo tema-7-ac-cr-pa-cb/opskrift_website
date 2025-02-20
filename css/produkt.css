@@ -72,6 +72,7 @@ li {
 .instruktioner_container {
   display: grid;
   justify-content: center;
+  background-color: #edf7ff;
 }
 
 .instruktioner_container .instruktioner_overskrift {
@@ -113,6 +114,7 @@ li {
 
 .illusion_i_bunden {
   padding-bottom: 4rem;
+  background-color: #edf7ff;
 }
 
 .servings,

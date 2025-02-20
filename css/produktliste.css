@@ -9,10 +9,11 @@ img {
   margin: 0% auto;
 }
 
-h1 {
+.produktliste h1 {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  color: var(--dark-blue-color);
 }
 
 /* 

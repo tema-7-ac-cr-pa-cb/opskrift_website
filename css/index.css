@@ -83,12 +83,13 @@
 
 /* Full-height section */
 .logo-section {
-  margin: 2rem;
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--background-color);
+  margin-bottom: 7rem;
+  margin-top: 5rem;
 }
 
 /* Logo styling */
