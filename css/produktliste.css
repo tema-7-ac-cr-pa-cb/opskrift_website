@@ -104,4 +104,7 @@ select {
     padding-left: 4rem;
     padding-right: 4rem;
   }
+  select {
+    margin-left: 8rem;
+  }
 }
