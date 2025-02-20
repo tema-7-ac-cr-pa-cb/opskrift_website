@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indisk Dahl Opskrift</title>
+    <title>Index</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <script src="js/index.js" defer></script>
 </head>
 
 
@@ -44,22 +45,52 @@
             </div>
         </div>
 
+        <div class="logo-section">
+            <div class="logo_2">
+                <a href="index.html">
+                    <img src="billeder/logo_blue.svg" alt=" Home">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="section_2">
+            <h3 class="section_2_headline">Add Your Own Recipe 🍣</h3>
+
+            <form id="recipe_form_one">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="recipeName">Recipe Name</label>
+                <input type="text" id="recipeName" name="recipeName" required>
+
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" required>
+
+                <label for="prepTime">Preparation Time (mins)</label>
+                <input type="number" id="prepTime" name="prepTime" required>
+
+                <label for="cookTime">Cooking Time (mins)</label>
+                <input type="number" id="cookTime" name="cookTime" required>
+
+                <label for="servings">Number of People</label>
+                <input type="number" id="servings" name="servings" required>
+
+                <button type="submit">Submit Recipe</button>
+            </form>
+        </div>
+
     </main>
 
     <footer>
         <div class="footer-container">
             <div class="newsletter">
-                <p><em>Share your own Voyage story recipes </em></p>
-                <form>
-                    <input type="email" placeholder="NAME">
-                    <button class="footer-button" type="submit">→</button>
-                </form>
+                <p><em>Sign up for delicious Voyage stories</em></p>
                 <form>
                     <input type="email" placeholder="EMAIL">
-                    <button class="footer-button" type="submit">→</button>
-                </form>
-                <form>
-                    <input type="email" placeholder="RECIPE">
                     <button class="footer-button" type="submit">→</button>
                 </form>
                 <p class="disclaimer">*We respect your inbox. No spam, just flavor.</p>
