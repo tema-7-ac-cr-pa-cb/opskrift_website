@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
-    <script src="js/index.js" defer></script>
-  </head>
 
-  <body>
-    <header class="header">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Index</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet" />
+  <script src="js/menu.js"></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="billeder/logo_ny.svg" alt="Home" />
+      </a>
+    </div>
+    <nav class="menu">
+      <button class="burger-menu" aria-label="Toggle menu">&#9776;</button>
+      <div class="menu-links">
+        <a class="home" href="index.html">Home</a>
+        <a class="home" href="produktliste.html">Recipes</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- <header class="header">
       <div class="logo">
         <a href="index.html">
           <img src="billeder/logo_ny.svg" alt="Home" />
@@ -24,101 +43,103 @@
         <a class="home" href="produktliste.html">Recipes</a>
         <a href="#" class="workshop_button">+ Workshops</a>
       </div>
-    </header>
+    </header> -->
 
-    <main>
-      <div class="forside_hero-container">
-        <div class="forside_hero-image">
-          <img src="billeder/forside_svetlana_kuznetsova.webp" alt="Indisk dahl med naanbrød" />
-        </div>
-        <div class="forside_hero-content">
-          <p class="forside_hero-tagline">Go on a worldly food Voyage!</p>
-          <h1>A Culinary Journey Around the World</h1>
-          <p class="forside_hero-beskrivelse">Pack your taste buds and explore the world through its most delicious dishes.</p>
-          <a href="produktliste.html" class="index_button">Find the recipes →</a>
-        </div>
+  <main>
+    <div class="forside_hero-container">
+      <div class="forside_hero-image">
+        <img src="billeder/forside_svetlana_kuznetsova.webp" alt="Indisk dahl med naanbrød" />
       </div>
-
-      <div class="logo-section">
-        <div class="logo_2">
-          <a href="index.html">
-            <img src="billeder/logo_blue.svg" alt=" Home" />
-          </a>
-        </div>
+      <div class="forside_hero-content">
+        <p class="forside_hero-tagline">Go on a worldly food Voyage!</p>
+        <h1>A Culinary Journey Around the World</h1>
+        <p class="forside_hero-beskrivelse">Pack your taste buds and explore the world through its most delicious
+          dishes.</p>
+        <a href="produktliste.html" class="index_button">Find the recipes →</a>
       </div>
+    </div>
 
-      <div class="section_2">
-        <h3 class="section_2_headline">Add Your Own Recipe 🍣</h3>
+    <div class="logo-section">
+      <div class="logo_2">
+        <a href="index.html">
+          <img src="billeder/logo_blue.svg" alt=" Home" />
+        </a>
+      </div>
+    </div>
 
-        <form id="recipe_form_one">
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="firstName" required />
+    <div class="section_2">
+      <h3 class="section_2_headline">Add Your Own Recipe 🍣</h3>
 
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="lastName" required />
+      <form id="recipe_form_one">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" required />
 
-          <label for="recipeName">Recipe Name</label>
-          <input type="text" id="recipeName" name="recipeName" required />
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" required />
 
-          <label for="country">Country</label>
-          <input type="text" id="country" name="country" required />
+        <label for="recipeName">Recipe Name</label>
+        <input type="text" id="recipeName" name="recipeName" required />
 
-          <label for="prepTime">Preparation Time (mins)</label>
-          <input type="number" id="prepTime" name="prepTime" required />
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" required />
 
-          <label for="cookTime">Cooking Time (mins)</label>
-          <input type="number" id="cookTime" name="cookTime" required />
+        <label for="prepTime">Preparation Time (mins)</label>
+        <input type="number" id="prepTime" name="prepTime" required />
 
-          <label for="servings">Number of People</label>
-          <input type="number" id="servings" name="servings" required />
+        <label for="cookTime">Cooking Time (mins)</label>
+        <input type="number" id="cookTime" name="cookTime" required />
 
-          <button type="submit">Submit Recipe</button>
+        <label for="servings">Number of People</label>
+        <input type="number" id="servings" name="servings" required />
+
+        <button type="submit">Submit Recipe</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="newsletter">
+        <p><em>Sign up for delicious Voyage stories</em></p>
+        <form>
+          <input type="email" placeholder="EMAIL" />
+          <button class="footer-button" type="submit">→</button>
         </form>
+        <p class="disclaimer">*We respect your inbox. No spam, just flavor.</p>
       </div>
-    </main>
 
-    <footer>
-      <div class="footer-container">
-        <div class="newsletter">
-          <p><em>Sign up for delicious Voyage stories</em></p>
-          <form>
-            <input type="email" placeholder="EMAIL" />
-            <button class="footer-button" type="submit">→</button>
-          </form>
-          <p class="disclaimer">*We respect your inbox. No spam, just flavor.</p>
+      <div class="footer-links">
+        <div class="column">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Our Story</a>
+          <a href="#">Work With Us</a>
+          <a href="#">Contact</a>
         </div>
-
-        <div class="footer-links">
-          <div class="column">
-            <h4>Company</h4>
-            <a href="#">About Us</a>
-            <a href="#">Our Story</a>
-            <a href="#">Work With Us</a>
-            <a href="#">Contact</a>
-          </div>
-          <div class="column">
-            <h4>Explore</h4>
-            <a href="#">Destinations</a>
-            <a href="#">Recipes</a>
-            <a href="#">Guides</a>
-            <a href="#">Newsletter</a>
-          </div>
-          <div class="column">
-            <h4>Social</h4>
-            <a href="#">Instagram</a>
-            <a href="#">Pinterest</a>
-            <a href="#">YouTube</a>
-          </div>
+        <div class="column">
+          <h4>Explore</h4>
+          <a href="#">Destinations</a>
+          <a href="#">Recipes</a>
+          <a href="#">Guides</a>
+          <a href="#">Newsletter</a>
         </div>
-
-        <p class="footer-bottom">© All rights reserved 2025</p>
-        <!-- <img class="footer_logo" src="billeder/logo_ny.svg" alt="logo"> -->
+        <div class="column">
+          <h4>Social</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Pinterest</a>
+          <a href="#">YouTube</a>
+        </div>
       </div>
-      <div>
-        <img class="footer_logoname" src="billeder/voyage_big.svg" alt="Logo big" />
-      </div>
-    </footer>
 
-    <!-- <script src="js/index.js"></script> -->
-  </body>
+      <p class="footer-bottom">© All rights reserved 2025</p>
+      <!-- <img class="footer_logo" src="billeder/logo_ny.svg" alt="logo"> -->
+    </div>
+    <div>
+      <img class="footer_logoname" src="billeder/voyage_big.svg" alt="Logo big" />
+    </div>
+  </footer>
+
+  <!-- <script src="js/index.js"></script> -->
+</body>
+
 </html>

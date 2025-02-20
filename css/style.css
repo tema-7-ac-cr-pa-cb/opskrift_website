@@ -101,7 +101,98 @@ li {
 }
 
 .header {
-  /* position: sticky; */
+  top: 0;
+  background-color: var(--light-blue-color);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  height: 5.5rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  display: inline-block;
+  color: var(--dark-blue-color);
+  padding: 15px 30px;
+  text-underline-offset: 4px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-family: "Quicksand", serif;
+  font-weight: 550;
+  letter-spacing: 1px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.menu a:hover {
+  transform: translateX(8px);
+  color: var(--background-color);
+}
+
+.menu-links {
+  display: flex;
+  gap: 20px;
+}
+
+.home {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.home:hover {
+  color: #2e5ba0;
+}
+
+/* Burger menu button (hidden on desktop) */
+.burger-menu {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    background: var(--light-blue-color);
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .menu-links a {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .menu.open .menu-links {
+    display: flex;
+  }
+}
+
+/* .logo img {
+  width: 60px;
+  height: auto;
+}
+
+.header {
+
   top: 0;
   background-color: white;
   z-index: 1000;
@@ -132,28 +223,12 @@ li {
     padding: 20px;
   }
 
-  /* logo i midten  .logo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  } */
-
   .logo img {
     width: 90px;
     height: auto;
   }
 }
 
-#cuisine {
-  /* display: inline-block; */
-  background-color: var(--dark-blue-color);
-  color: var(--text-color-white);
-  padding: 15px 20px;
-  border-radius: 25px;
-  font-family: "Quicksand", serif;
-  letter-spacing: 1px;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
 
 .workshop_button {
   display: inline-block;
@@ -175,7 +250,7 @@ li {
 
 .button:hover {
   transform: translateX(8px);
-}
+} */
 
 /* ---- Footer ----- */
 

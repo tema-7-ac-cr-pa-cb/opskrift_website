@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="da">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product</title>
 
-    <link rel="stylesheet" href="css/produkt.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/produkt.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product</title>
 
-  <body>
-    <header class="header">
-      <div class="logo">
-        <a href="index.html">
-          <img src="billeder/logo_ny.svg" alt="Home" />
-        </a>
-      </div>
-      <div class="menu">
+  <link rel="stylesheet" href="css/produkt.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/produkt.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet" />
+  <script src="js/index.js" defer></script>
+  <script src="js/menu.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="billeder/logo_ny.svg" alt="Home" />
+      </a>
+    </div>
+    <nav class="menu">
+      <button class="burger-menu" aria-label="Toggle menu">&#9776;</button>
+      <div class="menu-links">
         <a class="home" href="index.html">Home</a>
         <a class="home" href="produktliste.html">Recipes</a>
-        <a href="#" class="workshop_button">+ Workshops</a>
       </div>
-    </header>
+    </nav>
+  </header>
 
-    <main>
-      <div class="elementContainer">
-        <!-- <div class="grid4_1">
+  <main>
+    <div class="elementContainer">
+      <!-- <div class="grid4_1">
                 <div class="liste_opskrift">
                     <h3>Korean Bibimbap</h3>
                     <p>Koren, dinner</p>
@@ -83,48 +88,51 @@
                     <p>Cook time</p>
                 </div>
             </div> -->
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="newsletter">
+        <p><em>Sign up for delicious Voyage stories</em></p>
+        <form>
+          <input type="email" placeholder="EMAIL" />
+          <button class="footer-button" type="submit">→</button>
+        </form>
+        <p class="disclaimer">*We respect your inbox. No spam, just flavor.</p>
       </div>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <div class="newsletter">
-          <p><em>Sign up for delicious Voyage stories</em></p>
-          <form>
-            <input type="email" placeholder="EMAIL" />
-            <button class="footer-button" type="submit">→</button>
-          </form>
-          <p class="disclaimer">*We respect your inbox. No spam, just flavor.</p>
-        </div>
 
-        <div class="footer-links">
-          <div class="column">
-            <h4>Company</h4>
-            <a href="#">About Us</a>
-            <a href="#">Our Story</a>
-            <a href="#">Work With Us</a>
-            <a href="#">Contact</a>
-          </div>
-          <div class="column">
-            <h4>Explore</h4>
-            <a href="#">Destinations</a>
-            <a href="#">Recipes</a>
-            <a href="#">Guides</a>
-            <a href="#">Newsletter</a>
-          </div>
-          <div class="column">
-            <h4>Social</h4>
-            <a href="#">Instagram</a>
-            <a href="#">Pinterest</a>
-            <a href="#">YouTube</a>
-          </div>
+      <div class="footer-links">
+        <div class="column">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Our Story</a>
+          <a href="#">Work With Us</a>
+          <a href="#">Contact</a>
         </div>
+        <div class="column">
+          <h4>Explore</h4>
+          <a href="#">Destinations</a>
+          <a href="#">Recipes</a>
+          <a href="#">Guides</a>
+          <a href="#">Newsletter</a>
+        </div>
+        <div class="column">
+          <h4>Social</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Pinterest</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
 
-        <p class="footer-bottom">© All rights reserved 2025</p>
-        <!-- <img class="footer_logo" src="billeder/logo_ny.svg" alt="logo"> -->
-      </div>
-      <div>
-        <img class="footer_logoname" src="billeder/voyage_big.svg" alt="Logo big" />
-      </div>
-    </footer>
-  </body>
+      <p class="footer-bottom">© All rights reserved 2025</p>
+      <!-- <img class="footer_logo" src="billeder/logo_ny.svg" alt="logo"> -->
+    </div>
+    <div>
+      <img class="footer_logoname" src="billeder/voyage_big.svg" alt="Logo big" />
+    </div>
+  </footer>
+
+</body>
+
+
 </html>
